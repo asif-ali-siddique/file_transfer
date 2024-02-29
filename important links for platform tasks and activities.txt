@@ -1,0 +1,406 @@
+important links for DBA tasks and activities:
+
+https://gitlab.bayer.com/ph-cdp/business-layer/snowflake/cdp/snowflake-liquibase/-/blob/master/CPH_DB/DATABASE-INIT/account/non_prod/05-QA-service%20accounts.sql
+
+https://gitlab.bayer.com/ph-cdp/business-layer/snowflake/cdp/snowflake-liquibase/-/blob/master/CPH_DB/DATABASE-INIT/account/non_prod/DEV_SERVICE_ACCOUNTS.sql
+
+https://bayerweb.atlassian.net/browse/CD-28328
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/2705096928/snowflake+and+liquibase+common+errors
+
+https://gitlab.bayer.com/ph-cdp/business-layer/snowflake/cdp/snowflake-liquibase/-/blob/master/CPH_DB/DATABASE-INIT/account/non_prod/06-s3-integration-template.sql
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3232432149/How+to+add+RLS+to+newly+created+objects
+
+https://bayerweb.atlassian.net/browse/CD-29601
+
+https://bayerweb.atlassian.net/browse/CD-33381
+
+https://gitlab.bayer.com/ph-cdp/business-layer/snowflake/cyrus    
+
+https://community.snowflake.com/s/article/Query-to-find-Object-Level-Access-rights-of-a-user
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/2494791905/CDP+PRIMA+Role+Access+Request
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/2118713443/CDP+PRIMA+Roles+Access+Request+Process
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3179773973/Snowflake+PRIMA+Roles+-+User+Access+Management
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3255664684/approval+process+for+creation+of+platform+owned+snowflake+objects
+
+https://docs.snowflake.com/en/user-guide/security-column-ddm-use.html
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/2705096928/snowflake+and+liquibase+common+errors
+
+https://gitlab.bayer.com/ph-cdp/business-layer/snowflake/cyrus/bay-cdp-cyrus-liquibase-phcdw/-/blob/master/CPH_PHCDW/DATABASE-INIT/non-prod/grants_PHCDW_QA.all.sql
+
+to raise requests for snowflake/CDP role:
+https://bayersi.service-now.com/sp?id=sc_cat_item&sys_id=0bd029681bc2281007afddb7ab4bcbb1
+
+
+https://bayerweb.atlassian.net/wiki/spaces/BWSF/pages/279740418/How+to+-+JIRA
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/2565603458/Standardized+Version+of+dbeaver+with+all+drivers+and+connections+preconfigured
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/2724397057/Create%2BNew%2Bbranch%2Bin%2BGit
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/2565963908/Connect+to+Denodo+using+cdp+preconfigured+Dbeaver
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3288072223/Service+accounts+and+RLS 
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3303866403/snowflake+local+accounts+MCR+manual+consolidated+roles
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3162308686/Linting+with+sqlfluff#Access-error
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/2523562190/How+to+Configure+GIT+in+dbeaaver?NO_SSR=1
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3168075790/Linting+with+sqlfluff+in+local
+https://gitlab.bayer.com/ph-cdp/infrastructure/pipelines/gitlab-ci-sqlfluff/-/blob/master/linter-config/default/snowflake/setup.cfg
+https://gitlab.bayer.com/ph-cdp/infrastructure/pipelines/gitlab-ci-sqlfluff/-/blob/master/linter-config/ph-cdp-core/snowflake/pep8.ini
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3162308686/SQL+Linting+with+sqlfluff
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3191799944/SQLFluff+-+Linting+Tool+for+Snowflake+Developers
+
+https://bayergroup.sharepoint.com/sites/IAMGuidanceAndSupport/Identity%20Management%20(GUMS)/SitePages/Identity-Management-(GUMS).aspx
+
+https://community.snowflake.com/s/article/How-to-Register-for-SnowSupport
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3270311982/snowflake+personal+consolidated+role
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3326574616/AzureAD+synchronizers
+https://cognizantonlinegbr-my.sharepoint.com/personal/256794_cognizant_com/_layouts/15/stream.aspx?id=%2Fpersonal%2F256794%5Fcognizant%5Fcom%2FDocuments%2FBayer%20Account%2FRecordings%2FSnowflake%20Query%20Performance%20Evaluation%20%26%20Optimization%2D20221208%5F160236%2DMeeting%20Recording%2Emp4&ga=1
+https://docs.snowflake.com/en/user-guide/data-sharing-reader-config.html
+https://community.snowflake.com/s/article/FAQ-the-Classic-UI-button-has-disappeared-from-Snowsight
+Can you please raise a request for PRIMA access as mentioned below –
+
+1.       Log into your VDI
+2.       Open go\prima in IE/Firefox
+3.       Click on access request
+4.       Provide your secondary CWID in “Member” section
+5.       Add the following “IT system/application” section
+
+6.       Give the Reason like “Development”, “Owner” etc.
+7.       Once the request is raised, please ping shenbagakumar.p@cognizant.com(EISGF),sethuraman.ramalingam@cognizant.com(EKDNU) for providing the access
+
+cph_cdp_global_iqvia_user@bayer.com
+cph_cdp_global_sdh_user@bayer.com
+cph_cdp_de_sdh_user@bayer.com
+cph_cdp_de_iqvia_user@bayer.com
+
+  SHOW USERS LIMIT 10000;
+SELECT "name", "login_name", "first_name", "last_name", "comment" FROM table(result_scan(last_query_id(-1))) WHERE
+("comment" LIKE '%false%' AND "login_name" LIKE '%BAYER.COM%')
+
+
+
+SELECT listagg('alter user ' || '"' || "name" || '"' || ' set ' || 'default_warehouse' || '='|| 'NON_PROD_TEC_WH_XS;', '\n') FROM TABLE(result_scan(last_query_id()));
+
+1.- > select * from table (RESULT_SCAN('01a8eba3-0402-cf76-002f-25032a346476')) limit 500000;
+2.- > select * from table (RESULT_SCAN('01a8eba3-0402-cf76-002f-25032a346476')) limit 400000 offset 500001;
+
+SHOW PARAMETERS IN ACCOUNT;
+show parameters
+
+PREVENT_UNLOAD_TO_INLINE_URL 
+PREVENT_UNLOAD_TO_INTERNAL_STAGES
+ALTER account SET PREVENT_UNLOAD_TO_INLINE_URL = FALSE
+
+
+
+
+
+https://community.snowflake.com/s/article/How-to-Register-for-SnowSupport
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/2451046800/setup+snowflake+and+s3+integration
+
+
+Enabling Notification Integration
+
+1. How much cost is Associated on each email triggered by no-reply@snowflake.net?
+2. How can we support HTML tags for email beautification?
+3. Is there a way to change the sender email address from no-reply@snowflake.net to noreply-ph-cdp-prod@bayer.com?
+
+
+
+
+
+
+cph_cdp_dataproducts_ops@bayer.com (Data Products)
+cph_cdp_awsplatform_ops@bayer.com (Data Platform)
+
+
+
+Please let me know if you need any help.
+
+
+CWID: please check the attached list
+Environment: PROD and NON PROD
+Access coverage: Japan
+Layers: Enriched and Analytics (as written in the document you kindly shared)
+Role: Data steward
+Application: Denodo/snowflake/collibra
+
+CWID: <> 
+Bayer Mail Id: <>
+Environment:NON PROD 
+Access coverage: GLOBAL 
+APPLICATION: Snowflake 
+LAYERS: Enriched AND Analytics 
+ROLE: Data Developer, BAY_CPH_CDP_TEC_SERVICE_ACCOUNT_ETL_LOAD_NPROD
+Provisioning of personal consolidated role 
+example: BAY_CPH_CDP_<<enviroment>>_CR_<<region>>_<<cwid>>__<<name>> 
+comments:
+Required to get access of PRIMA role BAY_CPH_CDP_TEC_SERVICE_ACCOUNT_ETL_LOAD_NPROD
+and provisioning of my personal consolidated role
+
+
+
+
+ 
+
+Secrets:
+bay-cdp-localdata-snowflake-secret-<region>-<env>
+bay-selfservice-snowflake-secret-<region>-<env>
+bay-cdp-snowflake-secret-<region>-<env>
+bay-cdp-snowflake-secret-backfill-<region>-<env>
+bay-cyrus-snowflake-secret-<region>-<env>
+bay-cdp-daylight-snowflake-secret-<env>
+bay-cdp-interim-solution-snowflake-<region>-<env >
+
+ 
+
+Current id: CPHCDPLOADUSER
+Change to: MVWHW@bayer.com
+
+
+bay-cdp-localdata-snowflake-secret-<region>-<env> ---
+bay-selfservice-snowflake-secret-<region>-<env>
+bay-cdp-snowflake-secret-<region>-<env>
+bay-cdp-snowflake-secret-backfill-<region>-<env>
+bay-cdp-interim-solution-snowflake-<region>-<env >
+
+
+
+
+
+https://gitlab.bayer.com/ph-cdp/business-layer/snowflake/commons/bay-cdp-commons-grey-schemas-provision
+
+ 
+
+@Basak, Sayan (Cognizant) please ensure that the scripts to create the grey schemas for radiology are stored https://gitlab.bayer.com/ph-cdp/business-layer/snowflake/commons/bay-cdp-commons-grey-schemas-provision/-/tree/main/CPH_DB_GREY/LOCAL_RAD_US
+
+@Zwick, Mike (Dr.) please create your own folder at the same level for the Japan solution.
+
+ 
+
+
+
+
+https://docs.int.bayer.com/-/cdp-expert-group-documentation/preview/review/data_platform/how_tos/developer_onboarding/index.html#github-setup
+
+
+
+
+{
+    "primaRole": "bay_cph_cdp_jp_prod",
+    "authorizerType": "consolidate-role-snowflake",
+    "regexExpression": "",
+    "jinjaTemplate": "BAY_CPH_CDP_DOM_COMMERCIAL_PROD; PROD_ANALYTICS_R; PROD_CPH_ANALYTICS_R; PROD_CPH_DB_METADATA_TABLE_AUDIT_LOG_R; PROD_ENRICH_R; PROD_CPH_ENRICHED_R"
+  },
+
+https://calendly.com/d/zx9-sds-gmm/snowflake-support-session/2023-02-01T15:30:00+05:30?month=2023-02&date=2023-02-01
+
+select *
+from table(information_schema.login_history_by_user(user_name => 'AHMED.NABIL@BAYER.COM', result_limit => 1000))
+order by event_timestamp desc;
+
+Later on we can cancel this query using SYSTEM$CANCEL_QUERY.
+
+select 'grant ' || "privilege" || ' on ' || "granted_on" ||' '||"name"|| ' to ETLLOADROLE;' 
+as SQL_COMMAND from table(result_scan(last_query_id()));
+
+
+https://gitlab.bayer.com/ph-cdp/business-layer/snowflake/cdp/snowflake-liquibase.git
+https://docs.gitlab.com/runner/faq/#:~:text=If%20you%20get%20the%20error,certs%20and%20restart%20the%20runner.
+https://docs.int.bayer.com/-/cdp-expert-group-documentation/data_platform/confluence_migration/It%20Architecture%20Blueprint%20Commercial%20Data%20Platform/data_ingestion/data_platform_project_docs/aws_accounts_and_connections/platform_howtos/gitlab_runners_troubleshooting/index.html
+
+
+access token: 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
+
+Cognizant,No. 5/535 
+Old Mahabalipuram Road,
+Okkiyam Thoraipakkam,
+Chennai­600097,India
+
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3326574616/AzureAD+synchronizers
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3372515443/AD+Synchronizers+for+Snowflake
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3319398500/Creating+a+new+Solution+within+the+Grey+Schema#3.3-Required-Entries-in-Authorizer
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3320545334/Grey+Schema
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3441819653/Grey+and+Blue+Schema+Provisioning+in+Transitional+Period+Prior+to+Full+Automation
+https://gitlab.bayer.com/search?group_id=5558&scope=blobs&search=PROD_CPH_DB_DATALOCK_COMM
+
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3480846361/service+accounts+authorization+configuration
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3567419409/Snowflake+user+migration+from+local+to+standard+user
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3270311982/snowflake+personal+consolidated+role
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3444572187/common+user+provisioner+errors
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3288072223/Service+accounts+and+RLS
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3241902429/snowflake+rls+admin+queries
+
+----------------------------------------------
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3269787687/Service+accounts+connection+to+snowflake
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3314450437/Subsystem+roles
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3319398500/Creating+a+new+Solution+within+the+Grey+Schema
+
+https://docs.snowflake.com/en/user-guide/security-access-control-privileges.html#integration-privileges
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3277225992/Snowflake+user+provisioner#3.-The-comment-field-of-each-user-in-the-Snowflake-database-must-be-empty-for-the-users-to-be-processed.-It-is-possible-to-run-the-following-SQL-commands-to-empty-those-fields
+
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3321528447/CPH+AI+-+How+to+unblock+your+GitLab+account+if+you+are+an+internal+user
+
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3326574616/AzureAD+synchronizers
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/3372515443/AD+Synchronizers+for+Snowflake
+https://community.snowflake.com/s/article/How-to-copy-privileges-from-an-existing-schema-to-a-restored-schema-By-generating-Dynamic-SQL-statements
+https://community.snowflake.com/s/article/Time-Travel-Inherited-DATA-RETENTION-TIME-IN-DAYS-Parameter-Retained-in-Transient-Tables
+https://docs.snowflake.com/en/user-guide/managing-behavior-change-releases
+no of queries running for more than 8 hrs for the last 3 months
+
+
+ 
+
+( * ) Available for all
+
+https://bayerweb.atlassian.net/wiki/spaces/C/pages/2567340267/Snowflake+Liquibase+Deployments
+
+
+Ticket with videos for , among others, Liquibase KT è https://bayerweb.atlassian.net/browse/CD-42475
+
+Here also, as part of KT to TATA:  
+https://bayergroup.sharepoint.com/sites/CDPPlatformTeam/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fsites%2FCDPPlatformTeam%2FShared%20Documents%2FGeneral%2FCyrus%5F2%5FTATA%5FKT&FolderCTID=0x0120003C8C24DD6813754980A453A7FEC70D99
+
+
+
+BAY_CPH_CDP_<countryies>_PROD
+
+
+cyrus task session
+13271668037337714
+13271668037370926
+
+
+grey eu non prod
+101984072408190
+101984072408090
+101984072404498
+101984072407230
+
+
+https://github.com/orgs/bayer-int/teams?query=ph-cdp-team
+https://community.snowflake.com/s/article/Snowflake-s-SnowPro-Certification-Preparation-Guide-How-to-Pass-in-3-Days
+https://medium.com/pinterest-engineering/setting-up-snowflake-secondary-roles-with-tableau-8efda19088b0
+https://medium.com/snowflake/secondary-roles-in-snowflake-c74587cbb5fa
+https://community.snowflake.com/s/article/Understanding-Dashboard-Sharing-Permissions-in-Snowsight
+https://community.snowflake.com/s/article/How-to-assign-dashboard-access-to-non-admin-user-just-to-monitor-the-performance-using-task-history-view
+https://community.snowflake.com/s/question/0D5Do00000CF3gJKAT/create-custom-roles-privileges-for-the-use-of-dashboards
+
+2127104	Gayatri Gajbhiye	Data Catalog
+ 
+
+2118645	Sandeep Sivaram K	Data Products
+ 
+
+2110800	Kushal Kashyap	Data Products
+
+show grants to user <user_name>;
+
+
+account_is_person_flag
+
+
+
+n
+
+
+
+
+
+SHOW DATABASES;
+SHOW SCHEMAS;
+SHOW TABLES;
+
+SHOW GRANTS ON DATABASE <database_name>;
+SHOW GRANTS ON SCHEMA <schema_name>;
+show future grants in SCHEMA <schema_name>;
+
+grey users cdp warehouse deafult
+grey roles cdp warehouse assigned
+
+
+SELECT SYSTEM$ABORT_TRANSACTION(1675743189511000000);
+
+show locks in account
+
+example session id: 118906239097254
+
+
+Access Right Control for the Views on top of the MODEL tables
+
+In order to achieve having read access to views, 
+but not the tables that are referenced by the views you need to do the following:
+
+Make sure that the OWNERrole of the views 
+(should be RWC, has been granted a role that has read access to the tables (e.g. R role))
+
+Make sure that the READ role of the views has not been granted the read access to the tables
+ 
+
+ MARCO.SCHIEK@BAYER.COM  GIASW
+ SANDRA.NOHL@BAYER.COM   GIBNL
+ YVES.LINGSCHEID@BAYER.COM  GIDRE
+ MARTIN.LOIBL@BAYER.COM
+
+
+
+
+
+
+
+
+
+
+
+Currently, you don't have any child role/subordinate role granted to this role PROD_PHCDW_PROD_CYRUS_GREY_PHCDW_CDM_RWC.
+You can check on your end by using the below command and look for the privilege='usage' and granted_on = 'role' in the command output.
+
+show grants to role PROD_PHCDW_PROD_CYRUS_GREY_PHCDW_CDM_RWC;
+
+
+For example, if you want a role ( say 'ROLE1' ) to be the new owner of the task PHCDW.PHCDW_CDM.CPH_TABLES_REFRESH_TASK, then that ROLE1 should first be granted to the schema owner and then you can transfer ownership of the task to this new ROLE1.
+
+grant role ROLE1 to role PROD_PHCDW_PROD_CYRUS_GREY_PHCDW_CDM_RWC;
+grant ownership of task PHCDW.PHCDW_CDM.CPH_TABLES_REFRESH_TASK to role ROLE1 copy current grants;
+In a managed access schema, only the schema owner role or a subordinate role in the role hierarchy of the schema owner role can be granted ownership of objects. So in the 'grant ownership' command, the grantee role(new owner of the object) should be the schema owner role or its subordinate role.
+
+The problem is not 'who' is executing the grant ownership command.
+The problem is with the new owner role specified in the command as grantee.
+
+This is the reason that the ACCOUNTADMIN role can't take ownership of the task PHCDW.PHCDW_CDM.CPH_TABLES_REFRESH_TASK.
+
+So you have to change the new owner role to be a subordinate role of schema owner 'PROD_PHCDW_PROD_CYRUS_GREY_PHCDW_CDM_RWC'
+
+use role accountadmin;
+grant ownership on task PHCDW.PHCDW_CDM.CPH_TABLES_REFRESH_TASK to role 
+
+
+how do i know how many records this job loaded bay-cdp-cvent-landing-job-eu-central-1 --12368
+
+
+python training links
+https://cognizantonline-my.sharepoint.com/:v:/r/personal/2082211_cognizant_com/Documents/Recordings/Python%20%20_%20%20May%20%20%202023%20%20_%20%20S2C%20%20_%20%2012954%20%20-%20%20Session1-20230516_100519-Meeting%20Recording.mp4?csf=1&web=1&e=u4LdB9
+https://community.snowflake.com/s/article/Backup-Restore-Disaster-Recovery-and-High-Availability-in-Snowflake
+
+
+Login to https://moodle.cognizant.com
+
+Backup schema deletion in CDP snowflake Prod under PHCDW DB
+
+how large that folder is. 1 TB took 3 hours. If it’s 3 TB they will need 9 hours approx..
